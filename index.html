@@ -1,596 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>UTS</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<header
-			id="header"
-			class="fixed top-0 left-0 w-full py-4 z-50 bg-white md:bg-transparent"
-		>
-			<div class="container">
-				<div class="flex w-full items-center justify-center md:justify-start">
-					<a href="/">
-						<img src="./statics/images/logo-dark.svg" class="h-[33px]" alt="" />
-					</a>
-					<button class="ml-auto block md:hidden" id="nabar-toggle">
-						<i class="bx bx-menu text-[34px] text-primary"></i>
-					</button>
-					<div
-						class="md:flex md:ml-10 w-full absolute md:static bg-white md:bg-transparent top-[55px] md:top-0 left-0 pt-4 md:pt-0 hidden"
-						id="navbar"
-					>
-						<nav
-							class="md:flex md:items-center w-full flex-col md:flex-row nav-collapsible hisdden px-3 md:px-0"
-						>
-							<ul class="md:mr-auto flex flex-col md:flex-row align-center">
-								<li class="py-2 md:py-0">
-									<a href="?" class="px-2 font-bold"> Home </a>
-								</li>
-								<li class="py-2 md:py-0">
-									<a href="?" class="px-2 font-light text-grey"> Home </a>
-								</li>
-								<li class="py-2 md:py-0">
-									<a href="?" class="px-2 font-light text-grey"> Course </a>
-								</li>
-								<li class="py-2 md:py-0">
-									<a href="?" class="px-2 font-light text-grey"> Mentors </a>
-								</li>
-
-								<li class="py-2 md:py-0">
-									<a href="?" class="px-2 font-light text-grey"> About Us </a>
-								</li>
-								<li class="py-2 md:py-0">
-									<a href="?" class="px-2 font-light text-grey"> Contact </a>
-								</li>
-							</ul>
-							<ul class="md:ml-auto flex md:items-center flex-col md:flex-row">
-								<li class="md:px-3 py-2 md:py-0">
-									<button class="btn-round btn-outline min-w-[140px]">
-										Log in
-									</button>
-								</li>
-								<li class="md:px-3 py-2 md:py-0">
-									<button class="btn-round min-w-[140px]">Registration</button>
-								</li>
-							</ul>
-						</nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="sticky z-50 top-0 bg-white w-full h-20 shadow-sm">
+    <div class="container mx-auto max-w-[1116px] h-full flex items-center justify-between text-sm font-bold">
+      <div class="brand-name flex items-center gap-x-2">
+        <img src="statics/images/Frame 12.png" alt="" width="34px">
+        <h1 class="text-[#0D0C22] text-2xl font-bold">CourseNow</h1>
+      </div>
+      <nav>
+        <ul class="flex">
+          <li class="rounded px-6 py-3.5"><a href="#">Products</a></li>
+          <li class="rounded px-6 py-3.5"><a href="#">Blog</a></li>
+          <li class="rounded px-6 py-3.5"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="demo">
+        <button class="bg-second text-white rounded px-6 py-3.5">GET A DEMO</button>
+      </div>
+    </div>
+  </header>
+  <main class="flex flex-col items-center gap-y-[120px] bg-[#FEFEFE]">
+    <section class="container max-w-[1116px] mx-auto mt-[60px]">
+      <div class="relative w-full h-[600px] flex items-center gap-[114px]">
+        <div class="w-[546px] pr-2.5">
+          <h2 class="text-6xl mb-[24px]">Are you looking for the best English course?</h2>
+          <p class="text-xl mb-[48px]">Look no further with <b class="font-bold">CourseNow</b> 
+          <br>
+          Our course is designed to help you build confidence 
+          and fluency in English, no matter your current level.</p>
+          <button class="bg-primary w-[200px] h-[50px] text-white text-sm rounded px-6 py-3.5">LEARN NOW</button>
+        </div>
+        <div class="absolute top-0 right-0 translate-x-36">
+          <img src="statics/images/Rectangle 6.png" alt="" width="618px">
+        </div>
+      </div>
+    </section>
+    <section class="container max-w-[1116px] mx-auto">
+      <div class="flex items-center justify-between gap-28">
+        <div class="w-[432px]">
+          <img src="statics/images/Rectangle 7.png" alt="">
+        </div>
+        <div class="w-[546px]">
+          <h3 class="text-5xl font-bold mb-6">student experience is our key</h3>
+          <p class="text-base mb-12">It only takes 12 weeks with us to develop your English skills. With us you will be ready and brave to have a conversation or write in English. Through various methods you will be trained to be directly active in discussions.</p>
+        </div>
+      </div>
+    </section>
+    <section class="container max-w-[1116px] mx-auto">
+      <div class="flex items-center justify-between gap-x-10">
+        <div class="w-[345px]">
+          <svg class="mb-6" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="2" fill="#F5F9FC"/>
+            <path d="M36.5715 26.6286V23.8857C37.8286 23.3524 39.1143 22.9524 40.4286 22.6857C41.7429 22.4191 43.1238 22.2857 44.5715 22.2857C45.5619 22.2857 46.5334 22.3619 47.4857 22.5143C48.4381 22.6667 49.3715 22.8572 50.2857 23.0857V25.6C49.3715 25.2572 48.4477 25 47.5143 24.8286C46.581 24.6572 45.6 24.5714 44.5715 24.5714C43.1238 24.5714 41.7334 24.7524 40.4 25.1143C39.0667 25.4762 37.7905 25.981 36.5715 26.6286ZM36.5715 39.2V36.4C37.8286 35.8667 39.1143 35.4762 40.4286 35.2286C41.7429 34.981 43.1238 34.8572 44.5715 34.8572C45.5619 34.8572 46.5334 34.9333 47.4857 35.0857C48.4381 35.2381 49.3715 35.4286 50.2857 35.6572V38.1714C49.3715 37.8286 48.4477 37.5714 47.5143 37.4C46.581 37.2286 45.6 37.1429 44.5715 37.1429C43.1238 37.1429 41.7334 37.3143 40.4 37.6572C39.0667 38 37.7905 38.5143 36.5715 39.2ZM36.5715 32.9143V30.1714C37.8286 29.6381 39.1143 29.2381 40.4286 28.9714C41.7429 28.7048 43.1238 28.5714 44.5715 28.5714C45.5619 28.5714 46.5334 28.6476 47.4857 28.8C48.4381 28.9524 49.3715 29.1429 50.2857 29.3714V31.8857C49.3715 31.5429 48.4477 31.2857 47.5143 31.1143C46.581 30.9429 45.6 30.8572 44.5715 30.8572C43.1238 30.8572 41.7334 31.0381 40.4 31.4C39.0667 31.7619 37.7905 32.2667 36.5715 32.9143ZM18.7429 42.2857C20.8 42.2857 22.7905 42.5238 24.7143 43C26.6381 43.4762 28.5334 44.1905 30.4 45.1429V20.7429C28.6857 19.6 26.8286 18.7143 24.8286 18.0857C22.8286 17.4572 20.8 17.1429 18.7429 17.1429C17.2953 17.1429 15.8762 17.3238 14.4857 17.6857C13.0953 18.0476 11.6953 18.4952 10.2857 19.0286V43.8286C11.4667 43.2952 12.8096 42.9048 14.3143 42.6572C15.8191 42.4095 17.2953 42.2857 18.7429 42.2857ZM33.8286 45.1429C35.7334 44.1905 37.6 43.4762 39.4286 43C41.2572 42.5238 43.2 42.2857 45.2572 42.2857C46.7048 42.2857 48.2 42.4 49.7429 42.6286C51.2857 42.8572 52.6096 43.1619 53.7143 43.5429V19.0286C52.4191 18.381 51.0477 17.9048 49.6 17.6C48.1524 17.2952 46.7048 17.1429 45.2572 17.1429C43.2 17.1429 41.2096 17.4572 39.2857 18.0857C37.3619 18.7143 35.5429 19.6 33.8286 20.7429V45.1429ZM32.1143 50.2857C30.1715 48.8381 28.0572 47.7238 25.7715 46.9429C23.4857 46.1619 21.1429 45.7714 18.7429 45.7714C17.3334 45.7714 15.9619 45.9429 14.6286 46.2857C13.2953 46.6286 11.9619 47.0476 10.6286 47.5429C9.75242 47.9619 8.9048 47.9048 8.08575 47.3714C7.2667 46.8381 6.85718 46.0762 6.85718 45.0857V18.6286C6.85718 18.0572 6.99051 17.5333 7.25718 17.0572C7.52384 16.581 7.92384 16.2095 8.45718 15.9429C10.0572 15.181 11.7238 14.6191 13.4572 14.2572C15.1905 13.8952 16.9524 13.7143 18.7429 13.7143C21.1429 13.7143 23.4762 14.0381 25.7429 14.6857C28.0096 15.3333 30.1334 16.3238 32.1143 17.6572C34.0572 16.3238 36.1429 15.3333 38.3715 14.6857C40.6 14.0381 42.8953 13.7143 45.2572 13.7143C47.0476 13.7143 48.8 13.8952 50.5143 14.2572C52.2286 14.6191 53.8857 15.181 55.4857 15.9429C56.0191 16.2095 56.4286 16.581 56.7143 17.0572C57 17.5333 57.1429 18.0572 57.1429 18.6286V45.0857C57.1429 46.1524 56.7143 46.9619 55.8572 47.5143C55 48.0667 54.1524 48.0762 53.3143 47.5429C52.0191 47.0095 50.7048 46.581 49.3715 46.2572C48.0381 45.9333 46.6667 45.7714 45.2572 45.7714C42.8572 45.7714 40.5524 46.1714 38.3429 46.9714C36.1334 47.7714 34.0572 48.8762 32.1143 50.2857Z" fill="#03AC0E"/>
+          </svg>
+          <h4 class="text-xl font-bold mb-4">Excelent course material</h4>
+          <p class="text-base">An easy learning process to explore how to write and speak in English</p>
+        </div>
+        <div class="w-[345px]">
+          <svg class="mb-6" width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.333374" width="64" height="64" rx="2" fill="#F5F9FC"/>
+            <path d="M23.2477 50.2857C22.3334 50.2857 21.5334 49.9429 20.8477 49.2572C20.1619 48.5714 19.8191 47.7714 19.8191 46.8572V41.1429H26.9048V33.8857C25.4572 34 24.0096 33.8 22.5619 33.2857C21.1143 32.7714 19.8191 31.9619 18.6762 30.8572V27.5429H15.8191L8.33337 20.0572C9.7048 18.7619 11.3429 17.7048 13.2477 16.8857C15.1524 16.0667 17.0953 15.6572 19.0762 15.6572C20.2191 15.6572 21.5239 15.8381 22.9905 16.2C24.4572 16.5619 25.7619 17.1429 26.9048 17.9429V13.7143H52.9048V44.2857C52.9048 45.9619 52.3238 47.381 51.1619 48.5429C50 49.7048 48.581 50.2857 46.9048 50.2857H23.2477ZM30.3334 41.1429H44.3334V44.2857C44.3334 45.0476 44.5715 45.6667 45.0477 46.1429C45.5239 46.6191 46.1429 46.8572 46.9048 46.8572C47.6667 46.8572 48.2858 46.6191 48.7619 46.1429C49.2381 45.6667 49.4762 45.0476 49.4762 44.2857V17.1429H30.3334V20.4L44.1048 34.1714V36.6286H41.6477L34.4477 29.4286L33.4762 30.5714C32.981 31.1429 32.4858 31.581 31.9905 31.8857C31.4953 32.1905 30.9429 32.4762 30.3334 32.7429V41.1429ZM17.3619 24.1143H22.1048V29.2C22.7524 29.6191 23.3905 29.9333 24.0191 30.1429C24.6477 30.3524 25.2858 30.4572 25.9334 30.4572C26.8858 30.4572 27.8572 30.2 28.8477 29.6857C29.8381 29.1714 30.5619 28.6476 31.0191 28.1143L31.9905 26.9714L28.0477 23.0286C26.8286 21.8095 25.4572 20.8476 23.9334 20.1429C22.4096 19.4381 20.7905 19.0857 19.0762 19.0857C18.0477 19.0857 17.1143 19.2095 16.2762 19.4572C15.4381 19.7048 14.581 20.0381 13.7048 20.4572L17.3619 24.1143ZM40.9048 44.5714H23.2477V46.8572H41.7048C41.4762 46.6286 41.2858 46.3143 41.1334 45.9143C40.981 45.5143 40.9048 45.0667 40.9048 44.5714Z" fill="#03AC0E"/>
+          </svg>          
+          <h4 class="text-xl font-bold mb-4">Interactive with activity</h4>
+          <p class="text-base">Full of activities and exercises during the learning process in class</p>
+        </div>
+        <div class="w-[345px]">
+          <svg class="mb-6" width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.666748" width="64" height="64" rx="2" fill="#F5F9FC"/>
+            <path d="M34.6668 54.8572L34.0953 48.5715H31.8096C26.362 48.5715 21.7144 46.6476 17.8668 42.8C14.0191 38.9524 12.0953 34.3048 12.0953 28.8572C12.0953 23.4096 14.0287 18.7619 17.8953 14.9143C21.762 11.0667 26.4382 9.14288 31.9239 9.14288C34.6287 9.14288 37.1334 9.6286 39.4382 10.6C41.743 11.5715 43.7525 12.9334 45.4668 14.6857C47.1811 16.4381 48.5239 18.5048 49.4953 20.8857C50.4668 23.2667 50.9525 25.8667 50.9525 28.6857C50.9525 31.2 50.5811 33.7143 49.8382 36.2286C49.0953 38.7429 48.0191 41.1429 46.6096 43.4286C45.2001 45.7143 43.4858 47.8286 41.4668 49.7715C39.4477 51.7143 37.1811 53.4096 34.6668 54.8572ZM37.5239 48.6857C40.6477 46.0572 43.0953 42.9619 44.8668 39.4C46.6382 35.8381 47.5239 32.2667 47.5239 28.6857C47.5239 23.9619 46.0477 20.0953 43.0953 17.0857C40.143 14.0762 36.4191 12.5715 31.9239 12.5715C27.3525 12.5715 23.4763 14.1619 20.2953 17.3429C17.1144 20.5238 15.5239 24.3619 15.5239 28.8572C15.5239 33.3524 17.1144 37.1905 20.2953 40.3715C23.4763 43.5524 27.3144 45.1429 31.8096 45.1429H37.5239V48.6857ZM31.9239 42.1143C32.5334 42.1143 33.0477 41.9048 33.4668 41.4857C33.8858 41.0667 34.0953 40.5524 34.0953 39.9429C34.0953 39.3334 33.8858 38.8191 33.4668 38.4C33.0477 37.981 32.5334 37.7715 31.9239 37.7715C31.3144 37.7715 30.8001 37.981 30.3811 38.4C29.962 38.8191 29.7525 39.3334 29.7525 39.9429C29.7525 40.5524 29.962 41.0667 30.3811 41.4857C30.8001 41.9048 31.3144 42.1143 31.9239 42.1143ZM30.3811 34.3429H33.2382C33.2382 33.3905 33.4001 32.6 33.7239 31.9715C34.0477 31.3429 34.7239 30.5143 35.7525 29.4857C36.7811 28.4572 37.5049 27.5143 37.9239 26.6572C38.343 25.8 38.5525 24.8762 38.5525 23.8857C38.5525 22.1715 37.9715 20.7619 36.8096 19.6572C35.6477 18.5524 34.0953 18 32.1525 18C30.5525 18 29.1239 18.4191 27.8668 19.2572C26.6096 20.0953 25.6763 21.2381 25.0668 22.6857L27.6953 23.7715C28.1144 22.781 28.6953 22.0476 29.4382 21.5715C30.1811 21.0953 31.0287 20.8572 31.9811 20.8572C33.1239 20.8572 34.0191 21.1334 34.6668 21.6857C35.3144 22.2381 35.6382 22.9715 35.6382 23.8857C35.6382 24.6096 35.4287 25.3429 35.0096 26.0857C34.5906 26.8286 33.8477 27.7524 32.7811 28.8572C31.7525 29.9238 31.0953 30.781 30.8096 31.4286C30.5239 32.0762 30.3811 33.0476 30.3811 34.3429Z" fill="#03AC0E"/>
+          </svg>          
+          <h4 class="text-xl font-bold mb-4">Non stop support</h4>
+          <p class="text-base">Our professional teachers are ready to guide you until you can</p>
+        </div>
+      </div>
+    </section>
+    <section class="w-full h-[670px] flex items-center">
+      <div class="w-1/2 flex justify-end bg-white">
+        <div class="w-[432px] mr-[88px]">
+          <div class="mb-14">
+            <h3 class="text-5xl mb-8">Why CourseNow?</h3>
+            <p class="text-base">We are experienced in teaching hundreds of people to grow their confidence in English</p>
+          </div>
+          <div class="mb-14">
+            <p class="text-7xl text-primary mb-2">100+</p>
+            <p class="text-base">Teachers from around the world ready to help you</p>
+          </div>
+          <div class="mb-14">
+            <p class="text-7xl text-primary mb-2">80+</p>
+            <p class="text-base">Onsite locations scattered around the world to conduct face-to-face classes</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-1/2 h-full bg-[#F5F9FC] flex justify-start items-center">
+        <div class="w-[507px] h-[430px] flex flex-col items-center gap-y-20 ml-20">
+          <div class="flex items-start gap-x-12">
+            <div class="w-16">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="2" fill="#F5F9FC"/>
+                <path d="M27.5562 55.625L25.1375 53.2062L28.3438 50H16.25V46.625H28.4563L25.1375 43.3062L27.5562 40.8875L34.925 48.2563L27.5562 55.625ZM16.25 43.7V12.875C16.25 11.975 16.5875 11.1875 17.2625 10.5125C17.9375 9.8375 18.725 9.5 19.625 9.5H44.375C45.275 9.5 46.0625 9.8375 46.7375 10.5125C47.4125 11.1875 47.75 11.975 47.75 12.875V43.7H44.375V39.1438C42.725 38.1688 40.8969 37.4281 38.8906 36.9219C36.8844 36.4156 34.5875 36.1625 32 36.1625C29.4125 36.1625 27.125 36.4156 25.1375 36.9219C23.15 37.4281 21.3125 38.1688 19.625 39.1438V43.7H16.25ZM19.625 35.2625C21.575 34.4 23.5906 33.7531 25.6719 33.3219C27.7531 32.8906 29.8625 32.675 32 32.675C34.1375 32.675 36.2375 32.8906 38.3 33.3219C40.3625 33.7531 42.3875 34.4 44.375 35.2625V12.875H19.625V35.2625ZM36.5 50V46.625H47.75V50H36.5ZM32 29.4125C30.2375 29.4125 28.7469 28.8031 27.5281 27.5844C26.3094 26.3656 25.7 24.875 25.7 23.1125C25.7 21.35 26.3094 19.8594 27.5281 18.6406C28.7469 17.4219 30.2375 16.8125 32 16.8125C33.7625 16.8125 35.2531 17.4219 36.4719 18.6406C37.6906 19.8594 38.3 21.35 38.3 23.1125C38.3 24.875 37.6906 26.3656 36.4719 27.5844C35.2531 28.8031 33.7625 29.4125 32 29.4125ZM32 26.0375C32.825 26.0375 33.5188 25.7563 34.0813 25.1938C34.6438 24.6313 34.925 23.9375 34.925 23.1125C34.925 22.2875 34.6438 21.5938 34.0813 21.0312C33.5188 20.4688 32.825 20.1875 32 20.1875C31.175 20.1875 30.4812 20.4688 29.9187 21.0312C29.3562 21.5938 29.075 22.2875 29.075 23.1125C29.075 23.9375 29.3562 24.6313 29.9187 25.1938C30.4812 25.7563 31.175 26.0375 32 26.0375Z" fill="#03AC0E"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold leading-[26px] mb-4">Personal learning</h4>
+              <p class="text-base">Our learning materials will be tailored to the needs of each student</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-x-12">
+            <div class="w-16">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="2" fill="#F5F9FC"/>
+                <path d="M46.0625 33.6875V30.3125H54.5V33.6875H46.0625ZM48.875 50L42.0688 44.9375L44.0938 42.2375L50.9 47.3L48.875 50ZM44.2625 21.7063L42.2375 19.0062L48.875 14L50.9 16.7L44.2625 21.7063ZM16.8125 47.75V38.75H12.875C11.9375 38.75 11.1406 38.4219 10.4844 37.7656C9.82813 37.1094 9.5 36.3125 9.5 35.375V28.625C9.5 27.6875 9.82813 26.8906 10.4844 26.2344C11.1406 25.5781 11.9375 25.25 12.875 25.25H23L34.25 18.5V45.5L23 38.75H20.1875V47.75H16.8125ZM36.5 39.5375V24.4625C37.5125 25.3625 38.3281 26.4594 38.9469 27.7531C39.5656 29.0469 39.875 30.4625 39.875 32C39.875 33.5375 39.5656 34.9531 38.9469 36.2469C38.3281 37.5406 37.5125 38.6375 36.5 39.5375ZM12.875 28.625V35.375H23.9L30.875 39.5375V24.4625L23.9 28.625H12.875Z" fill="#03AC0E"/>
+              </svg>                          
+            </div>
+            <div>
+              <h4 class="text-xl font-bold leading-[26px] mb-4">Interactive lessons</h4>
+              <p class="text-base">Our interactive exercises will help you learn and develop your skills</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-x-12">
+            <div class="w-16">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="2" fill="#F5F9FC"/>
+                <path d="M22.8875 45.7812H29.525V43.6437H25.025V41.0562H29.525V34.4187H22.8875V36.5562H27.3875V38.9187H22.8875V45.7812ZM38.975 45.7812H41.1125V34.4187H38.975V38.9187H36.6125V34.4187H34.475V41.0562H38.975V45.7812ZM52.25 29.8062V48.875C52.25 49.775 51.9125 50.5625 51.2375 51.2375C50.5625 51.9125 49.775 52.25 48.875 52.25H15.0687C14.1687 52.25 13.3812 51.9125 12.7062 51.2375C12.0312 50.5625 11.6937 49.775 11.6937 48.875V29.8062C10.6437 28.9062 9.94996 27.8 9.61246 26.4875C9.27496 25.175 9.31246 23.8625 9.72496 22.55L12.1437 14.9563C12.4437 13.9438 12.9687 13.1562 13.7187 12.5938C14.4687 12.0312 15.3312 11.75 16.3062 11.75H47.4125C48.4625 11.75 49.3812 12.0406 50.1687 12.6219C50.9562 13.2031 51.5 13.9813 51.8 14.9563L54.275 22.55C54.6875 23.8625 54.7156 25.175 54.3593 26.4875C54.0031 27.8 53.3 28.9062 52.25 29.8062ZM37.0625 28.0625C38.15 28.0625 39.0687 27.7062 39.8187 26.9937C40.5687 26.2812 40.8687 25.4187 40.7187 24.4062L39.3125 15.125H33.6875V24.4062C33.6875 25.3813 34.0062 26.2344 34.6437 26.9656C35.2812 27.6969 36.0875 28.0625 37.0625 28.0625ZM26.5437 28.0625C27.5937 28.0625 28.4843 27.7062 29.2156 26.9937C29.9468 26.2812 30.3125 25.4187 30.3125 24.4062V15.125H24.6875L23.2812 24.4062C23.1312 25.3813 23.3937 26.2344 24.0687 26.9656C24.7437 27.6969 25.5687 28.0625 26.5437 28.0625ZM16.3062 28.0625C17.2062 28.0625 17.9843 27.7531 18.6406 27.1344C19.2968 26.5156 19.6812 25.7562 19.7937 24.8562L21.2562 15.125H15.6312L13.0437 23.3375C12.6687 24.5 12.8187 25.5781 13.4937 26.5719C14.1687 27.5656 15.1062 28.0625 16.3062 28.0625ZM47.6375 28.0625C48.8375 28.0625 49.7843 27.575 50.4781 26.6C51.1718 25.625 51.3312 24.5375 50.9562 23.3375L48.3687 15.125H42.7437L44.2062 24.8562C44.3187 25.7562 44.7031 26.5156 45.3593 27.1344C46.0156 27.7531 46.775 28.0625 47.6375 28.0625ZM15.0687 48.875H48.875V31.3813C48.9125 31.4188 48.7906 31.4375 48.5093 31.4375H47.6375C46.7 31.4375 45.8093 31.2406 44.9656 30.8469C44.1218 30.4531 43.2875 29.8438 42.4625 29.0188C41.8625 29.7688 41.1125 30.3594 40.2125 30.7906C39.3125 31.2219 38.3187 31.4375 37.2312 31.4375C36.1062 31.4375 35.1406 31.2781 34.3343 30.9594C33.5281 30.6406 32.75 30.1062 32 29.3562C31.4375 30.0312 30.725 30.5469 29.8625 30.9031C29 31.2594 28.025 31.4375 26.9375 31.4375C25.775 31.4375 24.7437 31.2313 23.8437 30.8188C22.9437 30.4062 22.175 29.8062 21.5375 29.0188C20.6375 29.8062 19.7562 30.4062 18.8937 30.8188C18.0312 31.2313 17.1687 31.4375 16.3062 31.4375H15.5468C15.3031 31.4375 15.1437 31.4188 15.0687 31.3813V48.875Z" fill="#03AC0E"/>
+              </svg>                           
+            </div>
+            <div>
+              <h4 class="text-xl font-bold leading-[26px] mb-4">24/7 customer support</h4>
+              <p class="text-base">Our customer support is ready to help you whenever you need</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full h-[198px] bg-[#F5F9FC] flex justify-center items-center">
+      <div class="w-846px">
+        <h3 class="text-5xl leading-[60px] text-center mb-6">Our Partners</h3>
+        <ul class="flex items-center gap-x-[50px]">
+          <li class="notion flex items-center gap-x-2.5 text-3xl text-[#A6A6A6] font-semibold">
+						<svg fill="#A6A6A6" width="30px" height="30px" viewBox="0 0 47 47" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px">
+							<path d="M10.849,10.643c1.308,1.063,1.799,0.982,4.256,0.818l23.161-1.391	c0.492,0,0.083-0.49-0.081-0.571l-3.846-2.781c-0.737-0.572-1.719-1.227-3.601-1.064L8.312,7.288	c-0.818,0.081-0.981,0.49-0.655,0.818L10.849,10.643z M12,16.165V40.29c0,1.296,0.649,1.782,2.112,1.702l25.262-1.458	C40.837,40.454,41,39.561,41,38.508V14.545c0-1.051-0.406-1.619-1.3-1.538L13.3,14.545C12.326,14.626,12,15.113,12,16.165L12,16.165	z M37.441,16.724c0.166,0.746,0,1.491-0.747,1.575l-1.242,0.247v18.213c-1.078,0.579-2.072,0.91-2.9,0.91	c-1.326,0-1.659-0.414-2.652-1.655L21.78,23.265V35.6l2.57,0.579c0,0,0,1.49-2.074,1.49L16.561,38c-0.166-0.331,0-1.159,0.579-1.324	l1.492-0.414V19.954l-2.071-0.166c-0.167-0.746,0.247-1.821,1.408-1.905L24.1,17.47l8.451,12.915V18.96l-2.155-0.247	c-0.166-0.912,0.497-1.574,1.325-1.655L37.441,16.724z M6.515,5.102l23.124-1.703c2.84-0.243,3.571-0.08,5.355,1.216l7.382,5.188	C43.594,10.695,44,10.937,44,11.91v28.455c0,1.783-0.649,2.838-2.921,2.999l-26.855,1.622c-1.705,0.081-2.517-0.162-3.409-1.297	l-5.436-7.053C4.405,35.338,4,34.367,4,33.231V7.937C4,6.479,4.649,5.263,6.515,5.102z"></path>
+						</svg>
+						<p>Notion</p>
+          </li>
+          <li class="intercom flex items-center gap-x-2.5 text-3xl text-[#A6A6A6] font-semibold">
+						<svg fill="#A6A6A6" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M19.5,2H4.5A2.5,2.5,0,0,0,2,4.5v15A2.5,2.5,0,0,0,4.5,22h15A2.5,2.5,0,0,0,22,19.5V4.5A2.5,2.5,0,0,0,19.5,2ZM14.67,5.67A.66.66,0,0,1,15.34,5a.68.68,0,0,1,.66.66v8.9a.67.67,0,0,1-1.33,0Zm-3.34-.34A.67.67,0,0,1,12,4.66h0a.67.67,0,0,1,.67.67V15a.67.67,0,0,1-1.34,0ZM8,5.67a.67.67,0,0,1,1.33,0v8.9a.66.66,0,0,1-.67.66A.68.68,0,0,1,8,14.57ZM4.67,7A.67.67,0,0,1,6,7v6a.67.67,0,0,1-.67.66A.67.67,0,0,1,4.67,13ZM19.1,17.17A11.3,11.3,0,0,1,12,19.33a11.3,11.3,0,0,1-7.1-2.16.67.67,0,0,1,.87-1A10.2,10.2,0,0,0,12,18a10.15,10.15,0,0,0,6.23-1.84.67.67,0,0,1,.87,1ZM19.33,13A.67.67,0,0,1,18,13V7a.67.67,0,0,1,.67-.66.66.66,0,0,1,.66.66Z"/></svg>
+						<p>INTERCOM</p>
+          </li>
+          <li class="descript flex items-center gap-x-2.5 text-3xl text-[#A6A6A6] font-semibold">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 254.000000 300.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" fill="#A6A6A6" stroke="none">
+								<path d="M144 2967 c-104 -50 -144 -134 -144 -304 l0 -103 1083 0 1082 1 -69 65 c-170 160 -408 277 -684 336 -90 20 -136 21 -657 25 l-560 4 -51 -24z"/>
+								<path d="M0 1925 l0 -216 253 3 c233 3 255 5 292 24 61 32 96 88 102 166 9 107 -30 182 -112 219 -35 16 -69 19 -287 19 l-248 0 0 -215z"/>
+								<path d="M1228 2130 c-85 -25 -132 -99 -133 -205 0 -88 31 -147 97 -185 l43 -25 651 -3 651 -3 -14 88 c-15 96 -54 249 -78 307 l-15 36 -588 -1 c-323 0 -599 -4 -614 -9z"/>
+								<path d="M0 1075 l0 -215 563 0 c361 0 575 4 600 11 47 13 106 63 124 108 20 46 18 152 -2 196 -22 46 -75 91 -122 104 -25 7 -239 11 -600 11 l-563 0 0 -215z"/>
+								<path d="M1876 1275 c-49 -17 -102 -69 -117 -114 -7 -19 -12 -58 -12 -86 0 -69 17 -115 56 -153 61 -59 80 -62 367 -62 l260 0 15 36 c24 58 63 211 78 307 l14 87 -311 0 c-238 -1 -320 -4 -350 -15z"/>
+								<path d="M2 318 c5 -141 25 -197 86 -248 72 -59 78 -60 616 -60 586 0 671 8 895 81 192 63 369 164 501 287 l65 61 -1084 1 -1083 0 4 -122z"/>
+							</g>
+						</svg>
+						<p>descript</p>       
+          </li>
+          <li class="grammarly flex items-center gap-x-2.5 text-3xl text-[#A6A6A6] font-semibold">
+            <svg fill="#A6A6A6" width="30px" height="30px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.959 18.032c-0.001 0-0.002 0-0.003 0-0.313 0-0.592 0.142-0.777 0.365l-0.001 0.002c-0.146 0.176-0.235 0.403-0.235 0.652 0 0.066 0.006 0.131 0.018 0.194l-0.001-0.006c0.106 0.477 0.525 0.828 1.026 0.828 0.008 0 0.017-0 0.025-0l-0.001 0h1.571l0.911-0.128c-1.222 1.714-3.204 2.818-5.443 2.818-0.465 0-0.919-0.048-1.357-0.138l0.043 0.007c-2.295-0.363-4.162-1.899-4.988-3.963l-0.015-0.043c-0.329-0.772-0.52-1.671-0.52-2.614 0-3.76 3.038-6.811 6.793-6.831h0.002c2.36 0.074 4.426 1.272 5.687 3.074l0.015 0.023c0.182 0.288 0.499 0.477 0.859 0.477 0.207 0 0.4-0.062 0.561-0.169l-0.004 0.002c0.264-0.184 0.434-0.485 0.434-0.826 0-0.188-0.052-0.364-0.142-0.514l0.003 0.005h0.008c-1.585-2.467-4.315-4.078-7.421-4.078-4.856 0-8.792 3.936-8.792 8.792s3.936 8.792 8.792 8.792c2.64 0 5.008-1.164 6.62-3.006l0.009-0.010-0.191 1.069v0.966c-0 0.007-0 0.016-0 0.024 0 0.501 0.351 0.92 0.821 1.024l0.007 0.001c0.056 0.011 0.121 0.017 0.188 0.017 0.562 0 1.017-0.456 1.017-1.017v0-5.788h-5.519zM31 16c0 8.284-6.716 15-15 15s-15-6.716-15-15c0-8.284 6.716-15 15-15v0c8.284 0 15 6.716 15 15v0z"></path>
+						</svg>
+						<p>grammarly</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container max-w-[1116px] mx-auto flex items-center gap-x-16">
+      <div>
+        <h3 class="text-5xl leading-[52px] capitalize mb-8">You might be
+        <br>
+        nervous, butWe can
+        <br>
+        help you with that.</h3>
+        <p class="text-base">Join our free info session and meet our team for
+        <br>
+        introductions and study tests with our tutors</p>
+      </div>
+      <div class="w-[620px] flex items-center gap-x-8 bg-white rounded-lg shadow-lg p-6">
+        <img src="statics/images/Rectangle 6.png" alt="" width="177px">
+        <div>
+					<div class="mb-6">
+						<p class="text-lg leading-6 font-semibold capitalize mb-2.5">introduction to english course</p>
+						<ul class="flex items-center gap-x-6">
+							<li class="flex items-center gap-x-2.5 text-lg leading-[18px] font-medium">
+								<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.5 21.9004C4.1 21.9004 3.75 21.7504 3.45 21.4504C3.15 21.1504 3 20.8004 3 20.4004V5.40039C3 5.00039 3.15 4.65039 3.45 4.35039C3.75 4.05039 4.1 3.90039 4.5 3.90039H16.05L21 8.85039V20.4004C21 20.8004 20.85 21.1504 20.55 21.4504C20.25 21.7504 19.9 21.9004 19.5 21.9004H4.5ZM4.5 20.4004H19.5V9.67539H15.225V5.40039H4.5V20.4004ZM6.975 17.6254H17.025V16.1254H6.975V17.6254ZM6.975 9.67539H12V8.17539H6.975V9.67539ZM6.975 13.6504H17.025V12.1504H6.975V13.6504Z" fill="#0D0C22"/>
+								</svg>
+								<p>Online class</p>
+							</li>
+							<li class="flex items-center gap-x-2.5 text-lg leading-[18px] font-medium">
+								<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.675 17.7254L16.8 16.6004L12.825 12.6004V7.57539H11.325V13.2004L15.675 17.7254ZM12 22.9004C10.6333 22.9004 9.34167 22.6379 8.125 22.1129C6.90833 21.5879 5.84583 20.8712 4.9375 19.9629C4.02917 19.0546 3.3125 17.9921 2.7875 16.7754C2.2625 15.5587 2 14.2671 2 12.9004C2 11.5337 2.2625 10.2421 2.7875 9.02539C3.3125 7.80872 4.02917 6.74622 4.9375 5.83789C5.84583 4.92956 6.90833 4.21289 8.125 3.68789C9.34167 3.16289 10.6333 2.90039 12 2.90039C13.3667 2.90039 14.6583 3.16289 15.875 3.68789C17.0917 4.21289 18.1542 4.92956 19.0625 5.83789C19.9708 6.74622 20.6875 7.80872 21.2125 9.02539C21.7375 10.2421 22 11.5337 22 12.9004C22 14.2671 21.7375 15.5587 21.2125 16.7754C20.6875 17.9921 19.9708 19.0546 19.0625 19.9629C18.1542 20.8712 17.0917 21.5879 15.875 22.1129C14.6583 22.6379 13.3667 22.9004 12 22.9004ZM12 21.4004C14.3333 21.4004 16.3333 20.5671 18 18.9004C19.6667 17.2337 20.5 15.2337 20.5 12.9004C20.5 10.5671 19.6667 8.56706 18 6.90039C16.3333 5.23372 14.3333 4.40039 12 4.40039C9.66667 4.40039 7.66667 5.23372 6 6.90039C4.33333 8.56706 3.5 10.5671 3.5 12.9004C3.5 15.2337 4.33333 17.2337 6 18.9004C7.66667 20.5671 9.66667 21.4004 12 21.4004Z" fill="#0D0C22"/>
+								</svg>
+								<p>1 hour</p>
+							</li>
+						</ul>
 					</div>
-				</div>
-			</div>
-		</header>
-		<section class="hero">
-			<div class="container">
-				<div class="grid lg:grid-cols-2 sm:grid-cols-1">
-					<div class="flex items-center flex-col justify-center max-w-[700px]">
-						<div class="mr-auto">
-							<h1
-								class="text-left text-hero text-[37px] sm:text-[64px] font-bold text-dark"
-							>
-								The Best <span class="text-primary">Courses</span> With the Best
-								Mentors
-							</h1>
-							<div>
-								<p class="text-grey text-left mt-5">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-									fermentum massa sit amet porta efficitur.
-								</p>
-							</div>
-
-							<div class="mt-6 pt-5">
-								<button class="btn-round">Register Now</button>
-							</div>
-						</div>
-					</div>
-					<div class="lg:block hidden">
-						<div class="pt-6">
-							<img src="./statics/images/hero.png" class="hero-image" alt="" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="courses" class="py-10">
-			<div class="container">
-				<div class="flex flex-col lg:flex-row">
-					<div class="max-w-[360px]">
-						<h1 class="font-bold text-[22px] sm:text-[40px] text-dark">
-							Find The Course You Want
-						</h1>
-					</div>
-					<div class="max-w-[650px] lg:ml-auto">
-						<p class="text-grey">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-							fermentum massa sit amet porta efficitur.
-						</p>
-					</div>
-				</div>
-				<div class="grid lg:grid-cols-3 sm:grid-cols-1 mt-7 gap-7">
-					<div
-						class="rounded-md bg-white bg-[url('/statics/images/courses-1.png')] bg-center bg-cover overflow-hidden"
-					>
-						<a href="">
-							<div
-								class="flex p-5 min-h-[220px] flex-col items-start gradient-buttom"
-							>
-								<div class="flex w-full">
-									<span
-										class="bg-white rounded-3xl py-3 px-5 text-primary text-sm mr-auto"
-										><b>$25</b>/Course</span
-									>
-									<span
-										class="rounded-3xl bg-slate-500 py-3 px-5 text-primary text-sm ml-auto"
-									>
-										<i class="bx bxs-star text-yellow-400"></i>
-										<span class="text-yellow-400"> (2.1k) </span>
-									</span>
-								</div>
-								<div class="mt-auto">
-									<h5 class="text-white text-lg font-bold">
-										Basic programming (HTML, CSS)
-									</h5>
-								</div>
-								<div class="flex w-full mt-2">
-									<div class="text-sm mr-auto flex">
-										<img
-											src="./statics/images/user-1.png"
-											class="max-h-[24px] max-w-[24px]"
-											alt=""
-										/>
-										<div class="pl-3 text-white">
-											<span class="block text-sm">Raphael</span>
-											<span class="text-xs">Teacher</span>
-										</div>
-									</div>
-									<div class="text-sm ml-auto flex">
-										<span
-											class="h-[22px] w-[22px] bg-slate-500 rounded-full flex text-white justify-center items-center"
-										>
-											<i class="bx bx-play text-lg"></i>
-										</span>
-										<div class="pl-3 text-white">
-											<span class="block text-sm">20 Video</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div
-						class="rounded-md bg-white bg-[url('/statics/images/courses-2.png')] bg-center bg-cover overflow-hidden"
-					>
-						<a href="">
-							<div
-								class="flex p-5 min-h-[220px] flex-col items-start gradient-buttom"
-							>
-								<div class="flex w-full">
-									<span
-										class="bg-white rounded-3xl py-3 px-5 text-primary text-sm mr-auto"
-										><b>$25</b>/Course</span
-									>
-									<span
-										class="rounded-3xl bg-slate-500 py-3 px-5 text-primary text-sm ml-auto"
-									>
-										<i class="bx bxs-star text-yellow-400"></i>
-										<span class="text-yellow-400"> (2.1k) </span>
-									</span>
-								</div>
-								<div class="mt-auto">
-									<h5 class="text-white text-lg font-bold">
-										Basic programming (HTML, CSS)
-									</h5>
-								</div>
-								<div class="flex w-full mt-2">
-									<div class="text-sm mr-auto flex">
-										<img
-											src="./statics/images/user-1.png"
-											class="max-h-[24px] max-w-[24px]"
-											alt=""
-										/>
-										<div class="pl-3 text-white">
-											<span class="block text-sm">Raphael</span>
-											<span class="text-xs">Teacher</span>
-										</div>
-									</div>
-									<div class="text-sm ml-auto flex">
-										<span
-											class="h-[22px] w-[22px] bg-slate-500 rounded-full flex text-white justify-center items-center"
-										>
-											<i class="bx bx-play text-lg"></i>
-										</span>
-										<div class="pl-3 text-white">
-											<span class="block text-sm">20 Video</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div
-						class="rounded-md bg-white bg-[url('/statics/images/courses-3.png')] bg-center bg-cover overflow-hidden"
-					>
-						<a href="">
-							<div
-								class="flex p-5 min-h-[220px] flex-col items-start gradient-buttom"
-							>
-								<div class="flex w-full">
-									<span
-										class="bg-white rounded-3xl py-3 px-5 text-primary text-sm mr-auto"
-										><b>$25</b>/Course</span
-									>
-									<span
-										class="rounded-3xl bg-slate-500 py-3 px-5 text-primary text-sm ml-auto"
-									>
-										<i class="bx bxs-star text-yellow-400"></i>
-										<span class="text-yellow-400"> (2.1k) </span>
-									</span>
-								</div>
-								<div class="mt-auto">
-									<h5 class="text-white text-lg font-bold">
-										Basic programming (HTML, CSS)
-									</h5>
-								</div>
-								<div class="flex w-full mt-2">
-									<div class="text-sm mr-auto flex">
-										<img
-											src="./statics/images/user-1.png"
-											class="max-h-[24px] max-w-[24px]"
-											alt=""
-										/>
-										<div class="pl-3 text-white">
-											<span class="block text-sm">Raphael</span>
-											<span class="text-xs">Teacher</span>
-										</div>
-									</div>
-									<div class="text-sm ml-auto flex">
-										<span
-											class="h-[22px] w-[22px] bg-slate-500 rounded-full flex text-white justify-center items-center"
-										>
-											<i class="bx bx-play text-lg"></i>
-										</span>
-										<div class="pl-3 text-white">
-											<span class="block text-sm">20 Video</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="w-full justify-center mt-7 flex">
-					<button class="btn-round font-bold">See Course</button>
-				</div>
-			</div>
-		</section>
-		<section id="mentor" class="py-7">
-			<div class="container">
-				<div class="grid lg:grid-cols-2 sm:grid-cols-1">
 					<div>
-						<img
-							src="./statics/images/metors.png"
-							class="max-w-[100%]"
-							alt=""
-						/>
+						<button class="border-2 border-second rounded-2xl text-second text-sm font-bold py-2.5 px-9">LEARN MORE</button>
 					</div>
-					<div class="flex items-center flex-col justify-center mt-5 sm:mt-0">
-						<div class="mr-auto">
-							<h1
-								class="text-[22px] sm:text-[40px] font-bold text-dark max-w-[364px]"
-							>
-								Mentors who are professional in their fields
-							</h1>
-							<p class="text-grey mt-10">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-								fermentum massa sit amet porta efficitur.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="provide-user py-6">
-			<div class="container">
-				<div class="grid lg:grid-cols-2 sm:grid-cols-1">
-					<div class="mr-auto max-w-[485px]">
-						<h1 class="text-[22px] sm:text-[40px] font-bold text-dark">
-							We will provide the best for our users from year to year
-						</h1>
-						<p class="text-grey mt-10">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-							fermentum massa sit amet porta efficitur.
-						</p>
-						<ul class="grid grid-cols-2 max-w-[290px] mt-5">
-							<li class="flex py-2">
-								<span>
-									<i
-										class="bx bxs-check-circle text-white-green text-[22px]"
-									></i>
-								</span>
-								<span class="font-bold text-dark ml-2 text-sm"
-									>World Class</span
-								>
-							</li>
-							<li class="flex py-2">
-								<span>
-									<i
-										class="bx bxs-check-circle text-white-green text-[22px]"
-									></i>
-								</span>
-								<span class="font-bold text-dark ml-2 text-sm">Flexible</span>
-							</li>
-							<li class="flex py-2">
-								<span>
-									<i
-										class="bx bxs-check-circle text-white-green text-[22px]"
-									></i>
-								</span>
-								<span class="font-bold text-dark ml-2 text-sm">Affordable</span>
-							</li>
-							<li class="flex py-2">
-								<span>
-									<i
-										class="bx bxs-check-circle text-white-green text-[22px]"
-									></i>
-								</span>
-								<span class="font-bold text-dark ml-2 text-sm"
-									>Job Relevan</span
-								>
-							</li>
-						</ul>
-
-						<div class="mt-6">
-							<button class="btn-round">Register Now</button>
-						</div>
-					</div>
-					<div class="flex items-center w-full">
-						<div id="best-product-chart" class="w-full"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="trusted" class="py-8 bg-secondary">
-			<div class="container py-7 pt-8">
-				<div class="grid lg:grid-cols-2 md:grid-cols-1">
-					<div class="flex items-center flex-col justify-center">
-						<div class="max-w-[400px] mr-auto">
-							<h1
-								class="text-[22px] sm:text-[40px] font-bold text-dark max-w-[364px]"
-							>
-								Trusted by 20,000+ People
-							</h1>
-							<p class="text-grey mt-7">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-								fermentum massa sit amet porta efficitur.
-							</p>
-						</div>
-					</div>
-					<div
-						class="grid grid-rows-2 grid-cols-1 items-center justify-center sm:mt-8 lg:mt-0"
-					>
-						<div
-							class="shadow-sm p-5 max-w-[350px] rounded-md bg-white relative z-10 sm:ml-[250px]"
-						>
-							<div class="flex">
-								<div>
-									<img
-										src="./statics/images/user-1.png"
-										class="h-[24px] w-[24px] object-cover"
-										alt=""
-									/>
-								</div>
-								<div class="pl-3">
-									<span class="font-bold text-dark block text-sm"
-										>Au ah gelap</span
-									>
-									<span class="text-grey text-sm">UI Designer</span>
-								</div>
-							</div>
-							<span class="text-[40px] text-grey">“</span>
-							<p class="text-sm text-grey mt-[-25px]">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-								fermentum
-							</p>
-							<ul class="mt-3 flex">
-								<li class="mr-2">
-									<i class="bx bxs-star text-yellow-400"></i>
-								</li>
-								<li class="mr-2">
-									<i class="bx bxs-star text-yellow-400"></i>
-								</li>
-								<li class="mr-2">
-									<i class="bx bxs-star text-yellow-400"></i>
-								</li>
-								<li class="mr-2">
-									<i class="bx bxs-star text-yellow-400"></i>
-								</li>
-								<li class="mr-2">
-									<i class="bx bxs-star text-yellow-400"></i>
-								</li>
-							</ul>
-						</div>
-
-						<div
-							class="shadow-sm p-5 max-w-[350px] rounded-md bg-white relative mt-5 sm:mt-[-40px]"
-						>
-							<div class="flex">
-								<div>
-									<img
-										src="./statics/images/user-1.png"
-										class="h-[24px] w-[24px] object-cover"
-										alt=""
-									/>
-								</div>
-								<div class="pl-3">
-									<span class="font-bold text-dark block text-sm"
-										>Au ah terang</span
-									>
-									<span class="text-grey text-sm">UI Designer</span>
-								</div>
-							</div>
-							<span class="text-[40px] text-grey">“</span>
-							<p class="text-sm text-grey mt-[-25px]">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-								fermentum
-							</p>
-							<ul class="mt-3 flex">
-								<li class="mr-2">
-									<i class="bx bxs-star text-yellow-400"></i>
-								</li>
-								<li class="mr-2">
-									<i class="bx bxs-star text-yellow-400"></i>
-								</li>
-								<li class="mr-2">
-									<i class="bx bxs-star text-yellow-400"></i>
-								</li>
-								<li class="mr-2">
-									<i class="bx bxs-star text-yellow-400"></i>
-								</li>
-								<li class="mr-2">
-									<i class="bx bxs-star text-yellow-400"></i>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="develop-quality" class="py-10 my-[10px]">
-			<div class="container">
-				<div class="w-full bg-secondary develop-bg rounded-lg p-5 sm:p-[80px]">
-					<div class="grid lg:grid-cols-2 sm:grid-cols-1">
-						<div>
-							<div class="mr-auto max-w-[485px]">
-								<h1 class="text-[22px] sm:text-[40px] font-bold text-dark">
-									Develop Your Quality
-								</h1>
-								<p class="text-grey mt-5">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-									fermentum massa sit amet porta efficitur.
-								</p>
-								<div class="mt-6">
-									<button class="btn-round">Register Now</button>
-								</div>
-							</div>
-						</div>
-						<div class="sm:flex hidden">
-							<div class="ml-auto">
-								<img
-									src="./statics/images/develop-quality.png"
-									class="develip-quality-image object-contain"
-									alt=""
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer id="footer" class="bg-chocolate text-white py-10">
-			<div class="container">
-				<div class="grid lg:grid-cols-12 grid-cols-5">
-					<div class="lg:col-span-4 col-span-5 sm:pb-5 lg:pb-0">
-						<a href="/">
-							<img src="./statics/images/logo-white.svg" alt="" />
-							<p class="text-sm mt-7 text-white">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-								fermentum massa sit amet porta efficitur.
-							</p>
-							<ul class="flex mt-7">
-								<li class="mr-2">
-									<a href="?">
-										<i class="bx bxl-facebook text-[26px]"></i>
-									</a>
-								</li>
-								<li class="mr-2">
-									<a href="?">
-										<i class="bx bxl-twitter text-[26px]"></i>
-									</a>
-								</li>
-								<li class="mr-2">
-									<a href="?">
-										<i class="bx bxl-linkedin text-[26px]"></i>
-									</a>
-								</li>
-								<li class="mr-2">
-									<a href="?">
-										<i class="bx bxl-instagram text-[26px]"></i>
-									</a>
-								</li>
-							</ul>
-						</a>
-					</div>
-					<div class="sm:col-span-1 col-span-2">
-						<h6 class="font-bold">Home</h6>
-						<ul>
-							<li class="mt-2 text-sm"><a href="">Class</a></li>
-							<li class="mt-2 text-sm"><a href="">Course</a></li>
-							<li class="mt-2 text-sm"><a href="">About</a></li>
-							<li class="mt-2 text-sm"><a href="">Mentors</a></li>
-						</ul>
-					</div>
-					<div class="sm:col-span-2 col-span-3">
-						<h6 class="font-bold">Our company</h6>
-						<ul>
-							<li class="mt-2 text-sm"><a href="">Class Comunity</a></li>
-							<li class="mt-2 text-sm"><a href="">Course company</a></li>
-							<li class="mt-2 text-sm"><a href="">Company name</a></li>
-							<li class="mt-2 text-sm">
-								<a href="">mens course</a>
-							</li>
-							<li>
-								<a href="">Courses.com</a>
-							</li>
-						</ul>
-					</div>
-					<div class="sm:col-span-2 col-span-5">
-						<h6 class="font-bold">Class</h6>
-						<ul>
-							<li class="mt-2 text-sm"><a href="">Potography </a></li>
-							<li class="mt-2 text-sm"><a href="">HTML & CSS </a></li>
-							<li class="mt-2 text-sm"><a href="">JavaScript </a></li>
-							<li class="mt-2 text-sm"><a href="">Java </a></li>
-							<li class="mt-2 text-sm"><a href="">PHP </a></li>
-							<li class="mt-2 text-sm"><a href="">UI/UX Design </a></li>
-							<li class="mt-2 text-sm"><a href="">Web Design </a></li>
-							<li class="mt-2 text-sm"><a href="">Design Grafis</a></li>
-						</ul>
-					</div>
-					<div class="lg:col-span-3 col-span-5 mt-4 lg:mt-0">
-						<h6 class="font-bold">About us</h6>
-						<p class="my-2">You can contact Us to send email to us</p>
-						<form action="?">
-							<div
-								class="w-full rounded-3xl bg-white overflow-hidden flex pr-3"
-							>
-								<input
-									type="email	"
-									placeholder="Your email"
-									class="p-3 w-full text-dark px-5 outline-none"
-								/>
-								<button class="bg-white text-primary">
-									<i class="bx bx-send text-[22px]"></i>
-								</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</body>
-	<script type="module" src="./src/js/app.js"></script>
+        </div>
+      </div>
+    </section>
+    <section class="container max-w-[1116px] mx-auto">
+      <div class="flex items-center gap-x-[138px]">
+        <div class="w-[546px]">
+          <h3 class="text-5xl leading-[52px] capitalize mb-12">Learn how CourseNow help grow your skill</h3>
+          <div class="w-full h-[54px] flex items-center text-sm">
+            <input class="w-max-[390px] bg-[#F5F9FC] text-[#3D3D4E] flex-1 outline-0 py-4 pr-0 pl-6" type="email" placeholder="Enter Your Email Address">
+            <button class="w-max-[108px] bg-primary text-white font-bold py-4 px-9">Get A Demo</button>
+          </div>
+        </div>
+        <div class="w-[432px]">
+          <img src="statics/images/Rectangle 8.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-[#0D0C22] flex justify-center items-center">
+    <section class="container max-w-[1116px] flex items-start my-20 mx-auto gap-x-64">
+      <div class="w-[432px]">
+        <div class="brand-name flex items-center gap-x-2 mb-6">
+          <img src="statics/images/Frame 12.png" alt="" width="34px">
+          <h1 class="text-white text-2xl font-bold">CourseNow</h1>
+        </div>
+        <p class="text-sm text-white mb-12">Build confidence and fluency in English</p>
+        <ul class="flex items-center gap-x-4">
+          <li>
+            <img class="p-2.5" src="statics/images/Icons.png" alt="">
+          </li>
+          <li>
+            <img class="p-2.5" src="statics/images/Icons (1).png" alt="">
+          </li>
+          <li>
+            <img class="p-2.5" src="statics/images/Icons (2).png" alt="">
+          </li>
+          <li>
+            <img class="p-2.5" src="statics/images/Icons (3).png" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="grid grid-rows-6 grid-flow-col gap-6 text-sm text-white">
+        <a class="w-[202px] font-bold" href="#">Products</a>
+        <a class="w-[202px]" href="#">Campus</a>
+        <a class="w-[202px]" href="#">High school</a>
+        <a class="w-[202px]" href="#">Junior high school</a>
+        <a class="w-[202px]" href="#">Elementary school</a>
+        <a class="w-[202px]" href="#">Pre school</a>
+        <a class="w-[202px] font-bold" href="#">Company</a>
+        <a class="w-[202px]" href="#">Careers</a>
+        <a class="w-[202px]" href="#">Contact Sales</a>
+        <a class="w-[202px]" href="#">Terms & Privacy</a>
+        <a class="w-[202px] font-bold" href="#">Resources</a>
+        <a class="w-[202px]" href="#">Blog</a>
+      </div>
+    </section>
+  </footer>
+</body>
+<script type="module" src="/src/js/app.js"></script>
 </html>
