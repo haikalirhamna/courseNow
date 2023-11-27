@@ -10,8 +10,8 @@
   <title>Document</title>
 </head>
 <body class="overflow-x-hidden">
-  <header class="sticky z-50 top-0 bg-white w-full h-20 shadow-sm">
-    <div class="container mx-auto max-w-[1116px] h-full flex items-center justify-between text-sm font-bold px-4 xl:px-0">
+  <header class="sticky z-50 top-0 bg-white w-full h-full shadow-sm">
+    <div class="container mx-auto max-w-[1116px] h-20 flex items-center justify-between text-sm font-bold px-4 xl:px-0">
       <div class="brand-name flex items-center gap-x-2">
         <img class="w-6 lg:w-[34px]" src="statics/images/Frame 12.png" alt="">
         <h1 class="text-[#0D0C22] text-lg lg:text-2xl font-bold">CourseNow</h1>
@@ -26,14 +26,23 @@
       <div class="demo">
         <button class="hidden lg:block bg-second text-white rounded px-6 py-3.5">GET A DEMO</button>
       </div>
-      <div class="block lg:hidden">
+      <div class="block lg:hidden" id="btn-hamburger">
         <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
       </div>
+    </div>
+    <div class="humburger-menu hidden px-6">
+      <nav>
+        <ul class="flex flex-col items-start">
+          <li class="rounded px-6 py-3.5"><a href="#">Products</a></li>
+          <li class="rounded px-6 py-3.5"><a href="#">Blog</a></li>
+          <li class="rounded px-6 py-3.5"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main class="flex flex-col items-center gap-y-12 lg:gap-y-[120px] bg-[#FEFEFE]">
     <section class="container max-w-[1116px] mx-auto mt-2 lg:mt-[60px] px-4 xl:px-0">
-      <div class="relative w-full flex items-center gap-[114px]">
+      <div class="relative w-full min-h-[600px] flex items-center gap-[114px]">
         <div class="w-[546px] pr-2.5">
           <h2 class="text-6xl mb-[24px]">Are you looking for the best English course?</h2>
           <p class="text-lg lg:text-xl mb-[48px]">Look no further with <b class="font-bold">CourseNow</b> 
@@ -104,7 +113,7 @@
         </div>
       </div>
       <div class="w-full h-full bg-[#F5F9FC] flex justify-start items-center">
-        <div class="w-max-[507px] h-min-[430px] flex flex-col items-center gap-y-20 my-8 lg:my-0 ml-0 lg:ml-20">
+        <div class="max-w-[507px] h-min-[430px] flex flex-col items-center gap-y-20 my-8 lg:my-0 ml-0 lg:ml-20">
           <div class="flex gap-x-12">
             <div class="w-16">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -217,7 +226,7 @@
         </div>
       </div>
     </section>
-    <section class="container max-w-[1116px] mx-auto px-4 lg:px-0">
+    <section class="container max-w-[1116px] mx-auto px-4 lg:px-0 mb-[115px]">
       <div class="flex flex-col lg:flex-row items-center gap-[138px]">
         <div class="w-max-[546px]">
           <h3 class="text-5xl leading-[52px] capitalize mb-12">Learn how CourseNow help grow your skill</h3>
@@ -273,4 +282,5 @@
   </footer>
 </body>
 <script type="module" src="/src/js/app.js"></script>
+<script src="/src/js/toggleButton.js"></script>
 </html>
