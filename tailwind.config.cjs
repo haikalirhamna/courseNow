@@ -4,6 +4,28 @@ module.exports = {
 	purge: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	darkMode: false,
 	theme: {
+		screens: {
+			'sm': "360px",
+			'md': "420px",
+			'lg': "768px",
+			'xl': "980px",
+			'2xl': "1024px",
+			'3xl': "1080px",
+			'4xl': "1336px",
+		},
+		container: {
+      center: true,
+			padding: '1rem',
+			screens: {
+        'sm': '360px',
+        'md': '420px',
+        'lg': '768px',
+        'xl': '980px',
+        '2xl': '1024px',
+        '3xl': '1080px',
+        '4xl': '1336px',
+      },
+    },
 		fontFamily: {
 			sans: ['Inter, sans-serif'],
 		},
