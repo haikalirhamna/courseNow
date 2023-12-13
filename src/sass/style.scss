@@ -7,7 +7,7 @@
 		font-family: 'Poppins', sans-serif;
 	}
 
-	body {
+	html, body {
 		overflow-x: hidden;
 	}
 
@@ -36,38 +36,11 @@
 	nav ul li:hover::before {
 		width: 100%;
 	}
-	
-	nav ul li:hover {
-		font-size: 1.2em; 
-	}	
-
-	.notion:hover svg, .notion:hover p {
-		fill: black;
-		color: black;
-		transition: all ease .3s;
-	}
-
-	.intercom:hover svg, .intercom:hover p {
-		fill: black;
-		color: black;
-		transition: all ease .3s;
-	}
-
-	.descript:hover g, .descript:hover p {
-		fill: #0078FE;
-		color: #000321;
-		transition: all ease .3s;
-	}
-
-	.grammarly:hover svg, .grammarly:hover p {
-		fill: #0D8065;
-		color: #000321;
-		transition: all ease .3s;
-	}
 
 	.show {
 		display: block !important;
 		height: 100%;
+		background-color: white;
 	}
 
 	.list {

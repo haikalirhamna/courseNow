@@ -47,7 +47,7 @@ module.exports = {
 					lineHeight: '45px',
 					letterSpacing: '-0.01em',
 				}],
-				'2xl': ['28px', {
+				'2xl': ['24px', {
 					lineHeight: '30px',
 					letterSpacing: '-0.02em',
 				}],
